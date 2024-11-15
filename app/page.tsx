@@ -16,7 +16,7 @@ export default function Page() {
     <h1 className="text-5xl">We are <b>Almost</b> there!</h1>
     <p>Stay tuned for something amazing!!!</p>
 
-    <div className="mt-10 mb-5">
+    <div className="mt-10 mb-5 px-2">
         <div className="shadow w-full bg-white mt-2 max-w-2xl mx-auto rounded-full">
             <div className="rounded-full bg-indigo-600 text-xs leading-none text-center text-white py-1"
                 style={{ width: "50%" }}>50%</div>
