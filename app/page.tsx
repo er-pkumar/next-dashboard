@@ -7,44 +7,29 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col p-6">
-      <div className={styles.shape}>
-        <AcmeLogo />
-      </div>
-      <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
-        <div className="flex flex-col justify-center gap-6 rounded-lg bg-gray-50 px-6 py-10 md:w-2/5 md:px-20">
-        <div className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"/>
-          <p className={` ${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
-            <strong>Welcome to Acme.</strong> This is the example for the{' '}
-            <a href="https://nextjs.org/learn/" className="text-blue-500">
-              Next.js Learn Course
-            </a>
-            , brought to you by Vercel.
-          </p>
-          <Link
-            href="/login"
-            className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
-          >
-            <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
-          </Link>
+    <div 
+      className="h-screen w-full flex flex-col items-center justify-center text-center bg-[#FEE2D4] text-white"
+      style={{ 
+        backgroundImage:"url(/flash.jpg)",
+        backgroundSize: "contain",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+
+<div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
+
+<div className="z-50 flex flex-col justify-center text-white w-full h-screen">
+    <h1 className="text-5xl">We are <b>Almost</b> there!</h1>
+    <p>Stay tuned for something amazing!!!</p>
+
+    <div className="mt-10 mb-5">
+        <div className="shadow w-full bg-white mt-2 max-w-2xl mx-auto rounded-full">
+            <div className="rounded-full bg-indigo-600 text-xs leading-none text-center text-white py-1"
+                style={{ width: "50%" }}>50%</div>
         </div>
-        <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
-          <Image
-            src="/hero-desktop.png"
-            width={1000}
-            height={760}
-            className='hidden md:block'
-            alt="screenshot of the desktop project showing desktop version"
-          />
-          <Image
-            src="/hero-mobile.png"
-            width={560}
-            height={620}
-            className='block md:hidden'
-            alt="screenshot of the desktop project showing desktop version"
-          />
-        </div>
-      </div>
-    </main>
+    </div>
+</div>
+    </div>
   );
 }
